@@ -1,1 +1,31 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin-top: 20px;
+  background-color: green;
+}
+
+.centered {
+  margin: auto;
+  position: relative;
+  display: flexbox;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.numberTop {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.suits {
+  position: absolute;
+  margin: 85px;
+}
+.numberBottom {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
