@@ -16,16 +16,21 @@ body {
 }
 
 .numberTop {
-  padding-top: 10px;
-  padding-left: 10px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 30px;
 }
 
 .suits {
   position: absolute;
-  margin: 85px;
+  right: 80px;
+  top: 130px;
+  font-size: 35px;
 }
 .numberBottom {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 15px;
+  font-size: 30px;
 }
