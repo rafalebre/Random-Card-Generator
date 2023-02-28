@@ -6,11 +6,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  document.querySelector("#testing").innerHTML = cardGenerator();
-};
-let cardGenerator = function() {
-  let cardNumber = [
-    "1",
+  let suits = ["♥", "♠", "♣", "♦"];
+  let numbers = [
+    "A",
     "2",
     "3",
     "4",
@@ -24,10 +22,19 @@ let cardGenerator = function() {
     "Q",
     "K"
   ];
-  let cardNumberSelect = Math.floor(Math.random() * cardNumber.length);
-  let cardSuits = ["♦", "♥", "♠", "♣"];
 
-  let cardSuitsSelect = Math.floor(Math.random() * cardSuits.length);
+  function loadCard() {
+    var randomSuit = suits[Math.floor(Math.random() * suits.length)];
+    var randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
 
-  return cardNumber[cardNumberSelect] + cardSuits[cardSuitsSelect];
+    document.querySelector(".suitsTop").innerHTML = randomSuit;
+    document.querySelector(".number").innerHTML = randomNumber;
+    document.querySelector(".suitsBottom").innerHTML = randomSuit;
+
+    if (randomSuit == "♥" || randomSuit == "♦") {
+      document.querySelector(".suitsTop").style.color = "red";
+      document.querySelector(".suitsBottom").style.color = "red";
+    }
+  }
+  loadCard();
 };

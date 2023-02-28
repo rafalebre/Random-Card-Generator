@@ -4,7 +4,7 @@ body {
   background-color: green;
 }
 
-.centered {
+.card {
   margin: auto;
   position: relative;
   display: flexbox;
@@ -15,22 +15,23 @@ body {
   background-color: white;
 }
 
-.numberTop {
+.suitsTop {
   position: absolute;
   left: 20px;
   top: 15px;
-  font-size: 30px;
+  font-size: 45px;
 }
 
-.suits {
+.number {
   position: absolute;
-  right: 80px;
-  top: 130px;
-  font-size: 35px;
+  right: 85px;
+  top: 110px;
+  font-size: 60px;
+  font: bolder;
 }
-.numberBottom {
+.suitsBottom {
   position: absolute;
   right: 20px;
   bottom: 15px;
-  font-size: 30px;
+  font-size: 45px;
 }
